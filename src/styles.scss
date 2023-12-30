@@ -8,7 +8,6 @@
 }
 
 html, body {
-    height: 100%;
     background-color: #191f45;
 }
 
@@ -16,15 +15,18 @@ html, body {
     border-collapse: collapse;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 5px;
 }
 
 .column {
     margin: 0 auto;
     text-align: center;
-    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     list-style-position: inside;
+    &_photo {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .colouredText {
@@ -35,6 +37,12 @@ html, body {
     background-color: rgb(231, 231, 231);
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &_tech {
+        padding: 50px;
+    }
 }
 
 .modal_header {
@@ -67,4 +75,10 @@ html, body {
     width: 15px;
     height: 15px;
     border-radius: 7px;
+}
+
+.emphasizedText {
+    display: inline-flex;
+    font-weight: bold;
+    font-style: italic;
 }

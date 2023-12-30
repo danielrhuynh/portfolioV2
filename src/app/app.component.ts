@@ -24,6 +24,7 @@ export class AppComponent {
 
   openModalExp(): void {
     this.dialog.open(ExpComponent, {
+      width: '1000px',
     });
   }
 }

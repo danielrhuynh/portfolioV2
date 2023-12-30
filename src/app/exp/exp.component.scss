@@ -1,0 +1,42 @@
+.work {
+    background-color: #BB8FCE;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+.personal {
+    background-color: #7DCEA0;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+.course {
+    background-color: #F1948A;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+.textBlock {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.underlinedText {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.expInline {
+    display: inline-flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
