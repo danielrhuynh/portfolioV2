@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { MatDialog } from '@angular/material/dialog';
+import { ExpComponent } from './exp/exp.component';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +14,15 @@ import { AboutMeComponent } from './about-me/about-me.component';
 })
 export class AppComponent {
   title = 'portfolioV2';
+  constructor(public dialog: MatDialog) { }
+
+  openModalAboutMe(): void {
+    this.dialog.open(AboutMeComponent, {
+    });
+  }
+
+  openModalExp(): void {
+    this.dialog.open(ExpComponent, {
+    });
+  }
 }

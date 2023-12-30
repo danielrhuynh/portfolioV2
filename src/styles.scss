@@ -1,4 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+/* Page Setup */
+* {
+    box-sizing: border-box;
+    font-family: Quattrocento, Arial, sans-serif;
+    font-size: 12pt;
+    font-weight: 200;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+    height: 100%;
+    background-color: #191f45;
+}
+
+.row {
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.column {
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+    list-style-position: inside;
+}
+
+.colouredText {
+    color: #3500d3;
+}
+
+.backgroundContainer {
+    background-color: rgb(231, 231, 231);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.modal_header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.containerIcon {
+    width: 50px;
+    height: auto;
+    display: inline-block;
+}
+
+.containerHeader {
+    display: inline-block;
+    position: relative;
+    font-size: 2.5rem;
+    margin-left: 15px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    color: #000;
+    background-color: #FF605C;
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+}
