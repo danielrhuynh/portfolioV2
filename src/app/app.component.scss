@@ -92,17 +92,14 @@
     transform: translate(0, -20px);
 }
 
-/* Layout for screens over the 990px breakpoint */
-@media screen and (min-width: 990px) {
-    .leftCol {
-        margin-right: 10px;
-    }
-    .rightCol {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 10px;
-    }
+.leftCol {
+    margin-right: 10px;
+}
+.rightCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
 }
 
 @keyframes typing {

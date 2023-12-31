@@ -1,16 +1,9 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
   href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Space+Mono&family=Work+Sans&display=swap"
   rel="stylesheet" />
+
 <main class="main">
   <div class="content">
     <div class="container">
@@ -30,11 +23,11 @@
         </div>
       </div>
       <div class="rightCol">
-        <div class="window" (click)="openModalExp()">
+        <div class="window" (click)="openModalProjects()">
           <img class="projects_open" style="max-width: 100%; height: auto; cursor: pointer;"
             src="../assets/containerArt/projectsArt.png" alt="My Projects!">
         </div>
-        <div class="window" (click)="openModalProjects()">
+        <div class="window" (click)="openModalExp()">
           <img class="tech_open" style="max-width: 100%; height: auto; cursor: pointer;"
             src="../assets/containerArt/techStuffArt.png" alt="Tech Stuff!">
         </div>
@@ -62,11 +55,4 @@
   </div>
 </main>
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <router-outlet></router-outlet>
