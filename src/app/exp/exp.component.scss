@@ -40,3 +40,14 @@
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+@media (max-width: 600px) {
+    .expInline {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .textBlock {
+        font-size: 14px;
+    }
+}

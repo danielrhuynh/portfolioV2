@@ -40,7 +40,7 @@
 
 .icon_row a {
     display: inline-flex;
-    margin: 0px 15px;
+    margin: 0px 10px;
 }
 
 .link {
@@ -64,13 +64,11 @@
 }
 
 .typewriter {
+    max-width: 100%;
     text-align: center;
-    margin-top: 5px;
-    font-weight: bold;
+    margin: 0 10px;
     overflow: hidden;
     white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
     animation:
         typing 3.5s steps(40, end),
         blink-caret .75s step-end infinite;
@@ -109,5 +107,20 @@
 
     to {
         width: 100%
+    }
+}
+
+@media (max-width: 600px) {
+    .dock {
+        width: 90vw;
+        height: 60px;
+    }
+
+    .icon {
+        max-width: 40px;
+    }
+
+    .titleContainer, .window {
+        width: 300px;
     }
 }

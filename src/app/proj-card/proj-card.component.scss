@@ -76,3 +76,13 @@
     border-radius: 4px;
     color: #fff;
 }
+
+@media (max-width: 600px) {
+    .imageContainer {
+        height: 150px;
+    }
+
+    .project-description {
+        font-size: 12px;
+    }
+}

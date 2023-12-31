@@ -14,3 +14,13 @@
     border: 5px solid #d7d4e0;
     padding: 5px;
 }
+
+@media (max-width: 600px) {
+    .aboutMeImage {
+        width: 100%;
+    }
+
+    .aboutMeParagraph {
+        text-align: justify;
+    }
+}
