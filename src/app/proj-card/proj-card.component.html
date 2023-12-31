@@ -1,0 +1,15 @@
+<div class="cardContainer">
+    <div class="imageContainer">
+        <img src="{{imageUrl}}" class="project-image" />
+        <div class="gradient-overlay"></div>
+    </div>
+    <div class="project-content">
+        <h3 class="project-title">{{title}}</h3>
+        <div class="roles">
+            <span class="role" *ngFor="let role of roles">{{ role }}</span>
+        </div>
+    </div>
+    <p class="project-description" [innerHTML]="description"></p>
+    <div class="flexSpacer"></div>
+    <a href="#" class="learn-more">Learn more →</a>
+</div>

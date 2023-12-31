@@ -1,0 +1,35 @@
+<div class="backgroundContainer">
+    <div class="modal_header">
+        <img src="../../assets/icons/projectsIcon.svg" alt="tech stuff icon" class="containerIcon" />
+        <h1 class="containerHeader">Projects</h1>
+        <div class="closeButton" mat-button (click)="closeDialog()"></div>
+    </div>
+    <div class="row_cards">
+        <app-proj-card
+            class="project-card" 
+            [title]="selfParking.title" 
+            [description]="selfParking.description"
+            [roles]="selfParking.roles" 
+            [imageUrl]="selfParking.imageUrl">
+        </app-proj-card>
+        <app-proj-card
+            class="project-card"
+            [title]="liftBro.title" 
+            [description]="liftBro.description"
+            [roles]="liftBro.roles" 
+            [imageUrl]="liftBro.imageUrl">
+        </app-proj-card>
+        <app-proj-card
+            class="project-card"
+            [title]="ros.title" 
+            [description]="ros.description"
+            [roles]="ros.roles" 
+            [imageUrl]="ros.imageUrl">
+        </app-proj-card>
+    </div>
+    <br>
+    <h6 class="centeredText">More information about these projects can be found on my
+        <a class="colouredText" href="https://ca.linkedin.com/in/danryanhuynh" target="_blank">Linkedin</a>
+        and <a class="colouredText" href="https://github.com/Danryanh7" target="_blank">Github</a>
+    </h6>
+</div>

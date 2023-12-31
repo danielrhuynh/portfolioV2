@@ -11,11 +11,54 @@
 <link
   href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Space+Mono&family=Work+Sans&display=swap"
   rel="stylesheet" />
-
 <main class="main">
   <div class="content">
-    <button (click)="openModalAboutMe()">About Me</button>
-    <button (click)="openModalExp()">Working Experience</button>
+    <div class="container">
+      <div class="leftCol">
+        <div class="titleContainer">
+          <img class="titleContainerImage" src="../assets/containerArt/coverPhotoArt.svg" alt="About Me">
+          <h6 class="typewriter">
+            Dan Huynh
+          </h6>
+          <h6 style="text-align: center; padding-bottom: 10px; font-size: 8pt;" class="typewriter">
+            Software / Mechatronics Engineer | Storyteller
+          </h6>
+        </div>
+        <div class="window" (click)="openModalAboutMe()">
+          <img class="aboutMe_open" style="max-width: 100%; height: auto; cursor: pointer;"
+            src="../assets/containerArt/aboutMeArt.png" alt="About Me">
+        </div>
+      </div>
+      <div class="rightCol">
+        <div class="window" (click)="openModalExp()">
+          <img class="projects_open" style="max-width: 100%; height: auto; cursor: pointer;"
+            src="../assets/containerArt/projectsArt.png" alt="My Projects!">
+        </div>
+        <div class="window" (click)="openModalProjects()">
+          <img class="tech_open" style="max-width: 100%; height: auto; cursor: pointer;"
+            src="../assets/containerArt/techStuffArt.png" alt="Tech Stuff!">
+        </div>
+      </div>
+    </div>
+    <div class="dock">
+      <div class="icon_row">
+        <a class="link" href="../assets/2B_CV_07312023.pdf" target="_blank">
+          <img class="icon" src="../assets/icons/resumeIcon.png" alt="My resume!">
+        </a>
+        <a class="link" href="https://ca.linkedin.com/in/danryanhuynh" target="_blank">
+          <img class="icon" src="../assets/icons/linkedinIcon.png" alt="My Linkedin!">
+        </a>
+        <a class="link" href="mailto:d35huynh@uwaterloo.ca" target="_blank">
+          <img class="icon" src="../assets/icons/emailIcon.png" alt="Email Me!">
+        </a>
+        <a class="link" href="https://github.com/Danryanh7" target="_blank">
+          <img class="icon" src="../assets/icons/githubIcon.png" alt="My Github!">
+        </a>
+        <a class="link" href="https://open.spotify.com/user/kviblbmvhs7pwspwj44f52eto" target="_blank">
+          <img class="icon" src="../assets/icons/spotifyIcon.png" alt="My tunes!">
+        </a>
+      </div>
+    </div>
   </div>
 </main>
 

@@ -7,14 +7,25 @@
     font-weight: 200;
 }
 
-html, body {
+html,
+body {
     background-color: #191f45;
 }
 
 .row {
-    border-collapse: collapse;
     display: flex;
     justify-content: center;
+
+    &_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-height: 600px;
+        gap: 10px;
+        overflow-y: auto;
+        border: 5px solid #d7d4e0;
+        box-shadow: 15px 10px #aba9b2;
+    }
 }
 
 .column {
@@ -23,6 +34,7 @@ html, body {
     padding-left: 5px;
     padding-right: 5px;
     list-style-position: inside;
+
     &_photo {
         display: flex;
         align-items: center;
@@ -81,4 +93,20 @@ html, body {
     display: inline-flex;
     font-weight: bold;
     font-style: italic;
+}
+
+.centeredText {
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    app-proj-card {
+        flex: 1 1 calc(50% - 32px);
+    }
+}
+
+@media (max-width: 600px) {
+    app-proj-card {
+        flex: 1 1 100%;
+    }
 }

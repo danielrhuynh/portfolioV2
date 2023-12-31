@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MatDialog } from '@angular/material/dialog';
 import { ExpComponent } from './exp/exp.component';
+import { ProjectsComponent } from './proj/proj.component';
 
 @Component({
   selector: 'app-root',
@@ -25,6 +26,12 @@ export class AppComponent {
   openModalExp(): void {
     this.dialog.open(ExpComponent, {
       width: '1000px',
+    });
+  }
+
+  openModalProjects(): void {
+    this.dialog.open(ProjectsComponent, {
+      width: '1500px',
     });
   }
 }
