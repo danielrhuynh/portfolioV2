@@ -41,7 +41,7 @@ export class ProjectsComponent {
   };
 
   watoRos = {
-    title: 'Autonomous Goal-Oriented Controller',
+    title: 'Autonomous Controller',
     description: `I developed and implemented a robotic control node using <span class="colouredText">ROS2</span>, 
     integrated with the <span class="colouredText">Foxglove</span> visualization tool. The primary objective was to enable a robot to autonomously navigate towards a user-defined goal position. 
     Utilizing Foxglove's 3D panel, To ensure the robot's movement was relative to its own coordinate frame, 
