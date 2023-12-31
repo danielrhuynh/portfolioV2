@@ -13,4 +13,5 @@ export class ProjCardComponent {
   @Input() description!: string;
   @Input() roles!: string[];
   @Input() imageUrl!: string;
+  @Input() learnMoreUrl!: string;
 }
