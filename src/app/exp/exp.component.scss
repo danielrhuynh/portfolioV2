@@ -28,17 +28,20 @@
 .textBlock {
     text-align: center;
     margin-bottom: 15px;
+    
 }
 
 .underlinedText {
     text-decoration: underline;
     font-weight: bold;
+    font-size: 12pt;
 }
 
 .expInline {
     display: inline-flex;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 10pt;
 }
 
 @media (max-width: 600px) {
@@ -49,5 +52,19 @@
 
     .textBlock {
         font-size: 14px;
+    }
+
+    .underlinedText {
+        font-size: 10pt;
+    }
+
+    .expInline {
+        font-size: 9pt;
+    }
+
+    .work, .personal, .course {
+        width: 8px;
+        height: 8px;
+        margin-left: 8px;
     }
 }

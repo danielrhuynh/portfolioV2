@@ -55,7 +55,7 @@ body {
     height: 100%;
 
     &_tech {
-        padding: 50px;
+        padding: 20px;
     }
 }
 
@@ -112,27 +112,20 @@ body {
 }
 
 @media (max-width: 600px) {
-    app-proj-card {
-        flex: 1 1 100%;
-    }
+    
 }
 
 @media (max-width: 600px) {
+    app-proj-card {
+        flex: 1 1 100%;
+    }
+
     body {
         font-size: 10pt;
     }
 
-    .row,
-    .column {
-        padding: 0 10px;
-    }
-
-    .backgroundContainer {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
     .row_cards {
         box-shadow: none;
+        border: none;
     }
 }
