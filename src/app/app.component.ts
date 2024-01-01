@@ -19,7 +19,7 @@ export class AppComponent {
 
   openModalAboutMe(): void {
     this.dialog.open(AboutMeComponent, {
-      // width: '1000px',
+      width: '1000px',
     });
   }
 
