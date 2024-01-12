@@ -37,7 +37,7 @@ export class ProjectsComponent {
     The integration of TensorFlow and PoseNet demonstrates my skills in implementing machine learning models and handling real-time data processing and pose estimation.`,
     roles: ['Project Manager', 'Developer'],
     imageUrl: '../../assets/thumbnails/liftbroThumbnail.png',
-    learnMoreUrl: `https://github.com/Danryanh7/liftbro`
+    learnMoreUrl: `https://github.com/danielrhuynh/liftbro`
   };
 
   watoRos = {
