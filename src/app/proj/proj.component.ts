@@ -41,18 +41,18 @@ export class ProjectsComponent {
   };
 
   watoRos = {
-    title: 'Autonomous Controller',
-    description: `I developed and implemented a robotic control node using <span class="colouredTextProj">ROS2</span>, 
-    integrated with the <span class="colouredTextProj">Foxglove</span> visualization tool. The primary objective was to enable a robot to autonomously navigate towards a user-defined goal position. 
-    Utilizing Foxglove's 3D panel, To ensure the robot's movement was relative to its own coordinate frame, 
-    I employed ROS2's TF2 (Transform Library) for converting global coordinates into the robot's frame. 
-    The core of the robotic control relied on a simple proportional controller, fine-tuned by implementing separate linear and angular components for movement and rotation control. 
-    The control commands, calculated based on the positional error and predefined constants, were sent as geometry_msgs::msg::Twist messages to the robot through the "/cmd_vel" topic. 
-    This project not only solidified my understanding of ROS2 and its transformative capabilities but also demonstrated my ability to integrate different technologies for effective 
-    robotic control.`,
+    title: 'LiDar Object Detection Node',
+    description: `This was a really, really cool one. We wanted to replace our TAO-PointPillars LiDar object detection model with something that 
+    more closely mirror the specifications and performance of our production LiDAR systems. To do so, I encapsulated <span class="colouredTextProj">OpenPCDet</span>
+    in a <span class="colouredTextProj">ROS2-humble</span> node to handle point cloud rosbag feeds, enabling real-time bounding box predictions 
+    broadcast via the <span class="colouredTextProj">Foxglove</span> WebSocket protocol for instant visualization.
+    I also created a utility to convert <span class="colouredTextProj">PyTorch</span> tensors into PointCloud2 messages, integrating LiDar data with bounding-box predictions through dual 
+    transformation matrices and adapted <span class="colouredTextProj">OpenPCDet's</span> visualization tools to support 
+    <span class="colouredTextProj">VoxelNeXt</span> prediction rendering without a native <span class="colouredTextProj">X-11</span> server, using <span class="colouredTextProj">XVFB</span>. 
+    This project was a testament to the power of collaboration and I'm looking forward to continuing our journey towards transforming the future of transportation :)`,
     roles: ['Developer'],
-    imageUrl: '../../assets/thumbnails/watoThumbnail.png',
-    learnMoreUrl: `https://github.com/WATonomous/wato_asd_training`
+    imageUrl: '../../assets/thumbnails/watoLidarThumbnail.png',
+    learnMoreUrl: `https://github.com/WATonomous/wato_monorepo`
   }
 
   closeDialog(): void {
