@@ -49,7 +49,7 @@ export class ProjectsComponent {
     I also created a utility to convert <span class="colouredTextProj">PyTorch</span> tensors into PointCloud2 messages, integrating LiDar data with bounding-box predictions through dual 
     transformation matrices and adapted <span class="colouredTextProj">OpenPCDet's</span> visualization tools to support 
     <span class="colouredTextProj">VoxelNeXt</span> prediction rendering without a native <span class="colouredTextProj">X-11</span> server, using <span class="colouredTextProj">XVFB</span>. 
-    This project was a testament to the power of collaboration and I'm looking forward to continuing our journey towards transforming the future of transportation :)`,
+    This project was a testament to the power of collaboration and I'm looking forward to continuing our journey towards transforming the future of transportation :).`,
     roles: ['Developer'],
     imageUrl: '../../assets/thumbnails/watoLidarThumbnail.png',
     learnMoreUrl: `https://github.com/WATonomous/wato_monorepo`
