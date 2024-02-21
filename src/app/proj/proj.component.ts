@@ -41,7 +41,7 @@ export class ProjectsComponent {
   };
 
   watoRos = {
-    title: 'LiDar Object Detection Node',
+    title: '3D LiDar Object Detection',
     description: `This was a really, really cool one. We wanted to replace our TAO-PointPillars LiDar object detection model with something that 
     more closely mirror the specifications and performance of our production LiDAR systems. To do so, I encapsulated <span class="colouredTextProj">OpenPCDet</span>
     in a <span class="colouredTextProj">ROS2-humble</span> node to handle point cloud rosbag feeds, enabling real-time bounding box predictions 
