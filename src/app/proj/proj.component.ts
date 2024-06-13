@@ -23,7 +23,7 @@ export class ProjectsComponent {
     how it can be applied to sports betting.`,
     roles: ['Project Manager', 'Developer'],
     imageUrl: '../../assets/thumbnails/mlpThumbnail.png',
-    learnMoreUrl: `https://drive.google.com/file/d/10Ox9kfGaGSPsDhkgY5H1KwC_MI0ZZxbC/view?usp=sharing`
+    learnMoreUrl: `https://drive.google.com/file/d/1IPtg7ejRB2JW9bG2CZe5KY-PcA9VOPbU/view?usp=drive_link`
   };
 
   liftBro = {
