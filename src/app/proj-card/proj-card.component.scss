@@ -52,11 +52,12 @@
 
 .role {
     display: inline-block;
-    background: #c3afff;
+    background: rgba(195, 175, 255, 0.9);
     margin-right: 5px;
     border-radius: 4px;
     padding: 2px 8px;
     font-size: 12px;
+    backdrop-filter: blur(4px);
 }
 
 .project-description {
@@ -77,6 +78,11 @@
     text-decoration: none;
     border-radius: 4px;
     color: #fff;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background: #7c52ff;
+    }
 }
 
 @media (max-width: 600px) {

@@ -1,11 +1,20 @@
 .project-card {
     padding: 5px;
-    background-color: #efefef;
+    border-radius: 12px;
+    background-color: white;
     overflow-y: auto;
     flex: 1 1 calc(33% - 10px);
     min-width: 275px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 8px;  // Added margin between cards
+    
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+    }
 }
 
 @media (max-width: 600px) {
