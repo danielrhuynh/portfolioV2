@@ -23,9 +23,7 @@
 }
 
 @media (max-width: 1000px) {
-    .aboutMeImage {
-        width: 66vw;
-    }
+    
 
     .aboutMeParagraph {
         text-align: left;
@@ -43,5 +41,33 @@
 @media (max-width: 1024px) {
     .text-card {
         padding: 16px;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.column_photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+@media (max-width: 1000px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .aboutMeImage {
+        max-width: 75vw;
+    }
+
+    .column_photo {
+        align-items: center;
     }
 }
