@@ -22,12 +22,26 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .aboutMeImage {
-        width: 100%;
+        width: 66vw;
     }
 
     .aboutMeParagraph {
         text-align: left;
+    }
+}
+
+.text-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(8px);
+}
+
+@media (max-width: 1024px) {
+    .text-card {
+        padding: 16px;
     }
 }
