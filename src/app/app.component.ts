@@ -5,6 +5,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { MatDialog } from '@angular/material/dialog';
 import { ExpComponent } from './exp/exp.component';
 import { ProjectsComponent } from './proj/proj.component';
+import { AnalyticsService } from './services/analytics.service';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,10 @@ import { ProjectsComponent } from './proj/proj.component';
 })
 export class AppComponent {
   title = 'portfolioV2';
-  constructor(public dialog: MatDialog) { }
+  constructor(
+    public dialog: MatDialog,
+    private analyticsService: AnalyticsService
+  ) { }
 
   openModalAboutMe(): void {
     this.dialog.open(AboutMeComponent, {
