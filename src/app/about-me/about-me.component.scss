@@ -61,13 +61,56 @@
 @media (max-width: 1000px) {
     .row {
         flex-direction: column;
+        margin: 0;
     }
 
     .aboutMeImage {
         max-width: 75vw;
+        margin: 10px auto;
     }
 
     .column_photo {
         align-items: center;
+        width: 100%;
+    }
+
+    .column {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.backgroundContainer {
+    padding: 20px;
+}
+
+@media (max-width: 1000px) {
+    .backgroundContainer {
+        padding: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .text-card {
+        margin: 0;
+        width: 100%;
+    }
+
+    .aboutMeImage {
+        max-width: 75vw;
+        margin: 10px auto;
+    }
+
+    .column_photo {
+        align-items: center;
+        width: 100%;
+    }
+
+    .column {
+        width: 100%;
+        padding: 0;
     }
 }
