@@ -52,25 +52,33 @@
 .titleContainer {
     width: 400px;
     height: auto;
-    margin: 40px 10px;
+    margin: 40px auto;
     top: 0;
     background-color: rgb(230, 230, 230);
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titleContainerImage {
     max-width: 80%;
     height: auto;
+    margin: 0 auto;
 }
 
 .typewriter {
     max-width: 100%;
     text-align: center;
-    margin: 0 10px;
+    margin: 0 auto;
+    padding: 0 15px;
     overflow: hidden;
     white-space: nowrap;
     width: 0;
-    animation: typing 2.5s forwards;
+    visibility: hidden;
+    animation: 
+        typing 2.5s forwards,
+        showText 0.1s forwards;
 }
 
 .window {
@@ -101,7 +109,8 @@
 
 @keyframes typing {
     0% { 
-        width: 0; 
+        width: 0;
+        visibility: visible;
     }
     5% { 
         width: 5%; 
@@ -139,9 +148,15 @@
     }
 }
 
+@keyframes showText {
+    to {
+        visibility: visible;
+    }
+}
+
 // Add delay for the second typewriter
 div.typewriter:nth-child(3) {
-    animation-delay: 1.5s;
+    animation-delay: 1.5s, 1.5s;
 }
 
 @media (max-width: 600px) {
@@ -154,7 +169,35 @@ div.typewriter:nth-child(3) {
         max-width: 40px;
     }
 
-    .titleContainer, .window {
-        width: 300px;
+    .titleContainer {
+        width: 90%;
+        min-width: 280px;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .window {
+        width: 90%;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .leftCol, .rightCol {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .typewriter {
+        font-size: 14px;
+        padding: 0 5px;
+        visibility: hidden;
+    }
+
+    div.typewriter:nth-child(3) {
+        font-size: 9px;
+        padding: 0 2px;
     }
 }
