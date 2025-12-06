@@ -66,7 +66,7 @@ export class ProjectsComponent {
     <span class="colouredTextProj"><a href="https://quartz.danryanhuynh.dev/02---Areas/Thoughts/Writing" target="_blank">writing</a></span>. As such, I've migrated the majority of my thoughts to my
     <span class="colouredTextProj"><a href="https://quartz.danryanhuynh.dev/" target="_blank">obsidian vault</a></span> to provide myself with a more accessible and dynamic way to share my thoughts and experiences with others.
     <br>
-    Even though I don't plan on updating this website very often, I want it to remain in my vault of projects, as a testament to how far I've come as an engineer, being that this was my first true project.`,
+    Even though I don't plan on updating this website very often, I want it to remain in my vault of projects; as a snapshot in time, and as a testament to how far I've come as an engineer.`,
     link: "https://quartz.danryanhuynh.dev/"
   }
 
