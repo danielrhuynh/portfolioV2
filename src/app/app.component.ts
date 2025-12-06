@@ -35,7 +35,7 @@ export class AppComponent {
 
   openModalProjects(): void {
     this.dialog.open(ProjectsComponent, {
-      width: '1500px',
+      width: '1280px',
     });
   }
 }

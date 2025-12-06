@@ -113,42 +113,42 @@ div.typewriter:nth-child(3) {
 }
 
 @keyframes typing {
-    0% { 
+    0% {
         width: 0;
         visibility: visible;
     }
-    5% { 
-        width: 5%; 
+    5% {
+        width: 5%;
     }
-    10% { 
-        width: 10%; 
+    10% {
+        width: 10%;
     }
-    15% { 
-        width: 15%; 
+    15% {
+        width: 15%;
     }
-    20% { 
+    20% {
         width: 20%;
-        transition-timing-function: ease-out; 
+        transition-timing-function: ease-out;
     }
-    30% { 
+    30% {
         width: 35%;
-        transition-timing-function: ease-in; 
+        transition-timing-function: ease-in;
     }
-    40% { 
+    40% {
         width: 45%;
-        transition-timing-function: ease-out; 
+        transition-timing-function: ease-out;
     }
-    60% { 
+    60% {
         width: 70%;
-        transition-timing-function: ease-in; 
+        transition-timing-function: ease-in;
     }
-    80% { 
-        width: 85%; 
+    80% {
+        width: 85%;
     }
-    90% { 
-        width: 95%; 
+    90% {
+        width: 95%;
     }
-    100% { 
+    100% {
         width: 100%;
         visibility: visible;
     }
