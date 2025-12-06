@@ -1,0 +1,47 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-title {
+    padding: 4px;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+.project-description {
+    font-size: 14px;
+    padding: 4px;
+    line-height: 1.5;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.flexSpacer {
+    flex-grow: 1;
+}
+
+.learn-more {
+    display: block;
+    text-align: center;
+    padding: 4px;
+    background: #8f69ff;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #fff;
+    transition: background-color 0.2s;
+    margin: 24px 8px 8px 8px;
+
+    &:hover {
+        background: #7c52ff;
+    }
+}
+
+@media (max-width: 900px) {
+    .project-description {
+        max-height: none;
+        font-size: 14px;
+    }
+}

@@ -5,34 +5,15 @@
         <div class="closeButton" mat-button (click)="closeDialog()"></div>
     </div>
     <div class="row_cards">
-        <app-proj-card
-            class="project-card" 
-            [title]="mlpModule.title" 
-            [description]="mlpModule.description"
-            [roles]="mlpModule.roles" 
-            [imageUrl]="mlpModule.imageUrl"
-            [learnMoreUrl]="mlpModule.learnMoreUrl">
-        </app-proj-card>
-        <app-proj-card
+        <app-proj-redirect
             class="project-card"
-            [title]="liftBro.title" 
-            [description]="liftBro.description"
-            [roles]="liftBro.roles" 
-            [imageUrl]="liftBro.imageUrl"
-            [learnMoreUrl]="liftBro.learnMoreUrl">
-        </app-proj-card>
-        <app-proj-card
-            class="project-card"
-            [title]="watoRos.title" 
-            [description]="watoRos.description"
-            [roles]="watoRos.roles" 
-            [imageUrl]="watoRos.imageUrl"
-            [learnMoreUrl]="watoRos.learnMoreUrl">
-        </app-proj-card>
+            [body]="redirectDescription.body"
+            [link]="redirectDescription.link">
+        </app-proj-redirect>
     </div>
     <br>
-    <h6 class="centeredText">More information about these projects can be found on my
-        <a class="colouredText" href="https://ca.linkedin.com/in/danryanhuynh" target="_blank">Linkedin</a>
+    <h6 class="centeredText">Information about what I'm currently working on can be found on
+        <a class="colouredText" href="https://quartz.danryanhuynh.dev/01---Projects/Projects" target="_blank">My Projects</a>
         and <a class="colouredText" href="https://github.com/danielrhuynh" target="_blank">Github</a>
     </h6>
 </div>
